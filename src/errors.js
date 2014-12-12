@@ -32,7 +32,10 @@ let Errors = Backbone.Errors = {
       Errors.throw(name, e);
     }
 
-    if (ret && typeof ret.then === 'function') {
+    if (
+      ret && (typeof ret === 'object' || typeof ret === 'function') &&
+      typeof ret.then === 'function'
+    ) {
       ret.catch(e => Errors.throw(name, e));
     }
 
