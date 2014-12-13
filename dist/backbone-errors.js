@@ -12,7 +12,9 @@
   var channel = Backbone.Radio.channel("error");
 
   /**
-   * [Errors description]
+   * Advanced Error Handling for Backbone using Radio. Try, throw, and catch
+   * namespaced errors using Backbone.Radio with built-in promise handling.
+   *
    * @public
    * @namespace Errors
    */
@@ -33,16 +35,16 @@
       var ret;
 
       try {
-        if (context) {
-          ret = callback.call(context);
-        } else {
+        if (context === void 0) {
           ret = callback();
+        } else {
+          ret = callback.call(context);
         }
       } catch (e) {
         Errors["throw"](name, e);
       }
 
-      if (ret instanceof Promise) {
+      if (ret && (typeof ret === "object" || typeof ret === "function") && typeof ret.then === "function") {
         ret["catch"](function (e) {
           return Errors["throw"](name, e);
         });
