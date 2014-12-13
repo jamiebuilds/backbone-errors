@@ -1,7 +1,9 @@
 let channel = Backbone.Radio.channel('error');
 
 /**
- * [Errors description]
+ * Advanced Error Handling for Backbone using Radio. Try, throw, and catch
+ * namespaced errors using Backbone.Radio with built-in promise handling.
+ *
  * @public
  * @namespace Errors
  */
