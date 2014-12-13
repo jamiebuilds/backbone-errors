@@ -25,10 +25,10 @@ let Errors = Backbone.Errors = {
     let ret;
 
     try {
-      if (context) {
-        ret = callback.call(context);
-      } else {
+      if (context === undefined) {
         ret = callback();
+      } else {
+        ret = callback.call(context);
       }
     } catch (e) {
       Errors.throw(name, e);

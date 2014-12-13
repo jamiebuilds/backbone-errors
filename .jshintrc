@@ -10,7 +10,7 @@
   "bitwise"       : true,
   "camelcase"     : true,
   "curly"         : true,
-  "eqeqeq"        : true,
+  "eqeqeq"        : false,
   "es3"           : false,
   "forin"         : true,
   "immed"         : true,
