@@ -25,7 +25,7 @@ let Errors = Backbone.Errors = {
     let ret;
 
     try {
-      if (context === undefined) {
+      if (context === void 0) {
         ret = callback();
       } else {
         ret = callback.call(context);
