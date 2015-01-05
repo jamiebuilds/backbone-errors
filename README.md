@@ -3,10 +3,10 @@ Backbone Errors
 
 Advanced Error Handling for Backbone using Radio.
 
+[![Travis Status](http://img.shields.io/travis/thejameskyle/backbone-errors/master.svg?style=flat&amp;label=travis)](https://travis-ci.org/thejameskyle/backbone-errors) [![Code Climate Score](http://img.shields.io/codeclimate/github/thejameskyle/backbone-errors.svg?style=flat)](https://codeclimate.com/github/thejameskyle/backbone-errors) [![Coverage](http://img.shields.io/codeclimate/coverage/github/thejameskyle/backbone-errors.svg?style=flat)](https://codeclimate.com/github/thejameskyle/backbone-errors) [![Dependency Status](http://img.shields.io/david/thejameskyle/backbone-errors.svg?style=flat)](https://david-dm.org/thejameskyle/backbone-errors)
+
 Try, throw, and catch namespaced errors using Backbone.Radio with built-in
 promise handling.
-
-[![Travis Status](http://img.shields.io/travis/thejameskyle/backbone-errors/master.svg?style=flat&amp;label=travis)](https://travis-ci.org/thejameskyle/backbone-errors) [![Code Climate Score](http://img.shields.io/codeclimate/github/thejameskyle/backbone-errors.svg?style=flat)](https://codeclimate.com/github/thejameskyle/backbone-errors) [![Coverage](http://img.shields.io/codeclimate/coverage/github/thejameskyle/backbone-errors.svg?style=flat)](https://codeclimate.com/github/thejameskyle/backbone-errors) [![Dependency Status](http://img.shields.io/david/thejameskyle/backbone-errors.svg?style=flat)](https://david-dm.org/thejameskyle/backbone-errors)
 
 ## Usage
 
